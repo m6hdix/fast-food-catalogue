@@ -23,29 +23,34 @@ const CategoryList = React.memo(() => {
   return (
     <div
       className={` bg-white container rounded-md  p-2 flex items-center ${
-        loading ? "justify-center" : "justify-start"
+        loading ? "justify-center" : "justify-around"
       }  h-12 w-11/12 lg:w-full relative -top-4 mx-auto gap-5  font-semibold`}
     >
       {loading ? (
         <span className="loading loading-dots loading-lg text-indigo-500"></span>
       ) : (
         <>
-          <span className="cursor-pointer"> همه فست فود ها</span>
-          {categories.length > 0 &&
-            categories.map((category) => (
-              <span className="cursor-pointer" key={category.id}>
-                {category.name}
-              </span>
-            ))}
-          <div className="join flex-row-reverse justify-self-end  " >
-            <div>
-              <div>
-                <input className="input join-item" placeholder=" جستجو میان فست فود ها" />
+          <div className=" flex gap-5 items-center">
+            <span className="cursor-pointer"> همه فست فود ها</span>
+            {categories.length > 0 &&
+              categories.map((category) => (
+                <span className="cursor-pointer" key={category.id}>
+                  {category.name}
+                </span>
+              ))}
+          </div>
+          <div className="join flex-row-reverse justify-self-end shadow-xl  h-10 border w-1/2  ">
+            <div className="w-full">
+              <div className="w-full">
+                <input
+                  className="input join-item focus:outline-none h-10 w-full bg-slate-100"
+                  placeholder=" جستجو میان فست فود ها"
+                />
               </div>
             </div>
 
-            <div className="indicator">
-              <button className="btn join-item">
+            <div className="indicator ">
+              <button className="btn join-item h-10 min-h-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
