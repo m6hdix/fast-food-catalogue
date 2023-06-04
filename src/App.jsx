@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full h-screen bg-slate-400 ">
+    <div className="w-full  bg-slate-400  max-h-max ">
       <Header />
       <CategoryList />
       <div className="grid col-span-1 lg:grid-cols-3 gap-4 p-8">
