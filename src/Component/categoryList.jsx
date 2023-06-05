@@ -22,7 +22,7 @@ const CategoryList = React.memo(() => {
 
   return (
     <div
-      className={` bg-white container rounded-md  p-2 flex items-center ${
+      className={` bg-white container rounded-md  flex-wrap md:flex-nowrap p-2 flex items-center ${
         loading ? "justify-center" : "justify-around"
       }  h-12 w-11/12 lg:w-full relative -top-4 mx-auto gap-5  font-semibold`}
     >
