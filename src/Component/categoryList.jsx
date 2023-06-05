@@ -42,10 +42,13 @@ const CategoryList = React.memo(({ filterItems, searchFood }) => {
     [categories, handleFilterItems]
   );
 
-  const handelSearch = useCallback((e) => {
-    setValue(e.target.value);
-    searchFood(e.target.value);
-  }, [searchFood]);
+  const handelSearch = useCallback(
+    (e) => {
+      setValue(e.target.value);
+      searchFood(e.target.value);
+    },
+    [searchFood]
+  );
 
   return (
     <div
@@ -68,7 +71,7 @@ const CategoryList = React.memo(({ filterItems, searchFood }) => {
             {renderedCategories}
           </div>
 
-          <div className="join flex-row-reverse justify-self-end shadow-xl h-10 border w-1/2">
+          <div className="join flex-row-reverse justify-self-end shadow-xl h-10 border w-1/2 hidden md:inline-flex">
             <div className="w-full">
               <div className="w-full">
                 <input
