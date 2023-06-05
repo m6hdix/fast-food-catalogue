@@ -1,5 +1,6 @@
 {
   "name": "fast-food-catalogue",
+  "proxy": "https://react-mini-projects-api.classbon.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
