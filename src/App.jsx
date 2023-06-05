@@ -54,14 +54,14 @@ const App = () => {
   }, [fastFoods, loading]);
 
   return (
-    <div className={`w-full bg-slate-400 min-h-screen `}>
+    <div className={`w-full bg-slate-400 min-h-screen transition-transform `}>
       <Header />
       <CategoryList filterItems={filterItems} searchFood={searchFood} />
       <div
         className={`${
           loading
-            ? "flex w-full items-center justify-center"
-            : "grid col-span-1 lg:grid-cols-3 gap-4 p-8"
+            ? "flex w-full items-center justify-center "
+            : "grid col-span-1 lg:grid-cols-3 gap-4 p-8  fade-in"
         }`}
       >
         {loading ? (
