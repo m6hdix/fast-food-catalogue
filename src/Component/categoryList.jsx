@@ -54,13 +54,13 @@ const CategoryList = React.memo(({ filterItems, searchFood }) => {
     <div
       className={`bg-white container rounded-md flex-wrap md:flex-nowrap p-2 flex items-center ${
         loading ? "justify-center" : "justify-around"
-      } h-12 w-11/12 lg:w-full relative -top-4 mx-auto gap-5 font-semibold`}
+      } w-11/12 lg:w-full relative -top-4 mx-auto gap-5 font-semibold`}
     >
       {loading ? (
         <span className="loading loading-dots loading-lg text-indigo-500"></span>
       ) : (
         <>
-          <div className="flex gap-5 items-center ">
+          <div className="flex gap-5 items-center flex-wrap ">
             <span
               className="cursor-pointer"
               onClick={() => handleFilterItems()}
@@ -71,7 +71,7 @@ const CategoryList = React.memo(({ filterItems, searchFood }) => {
             {renderedCategories}
           </div>
 
-          <div className="join flex-row-reverse justify-self-end shadow-xl h-10 border w-1/2 ">
+          <div className="join flex-row-reverse justify-self-end shadow-xl h-10 border w-full md:w-1/2 ">
             <div className="w-full">
               <div className="w-full">
                 <input
