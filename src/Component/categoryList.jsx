@@ -71,7 +71,7 @@ const CategoryList = React.memo(({ filterItems, searchFood }) => {
             {renderedCategories}
           </div>
 
-          <div className="join flex-row-reverse justify-self-end shadow-xl h-10 border w-1/2 hidden md:inline-flex">
+          <div className="join flex-row-reverse justify-self-end shadow-xl h-10 border w-1/2 ">
             <div className="w-full">
               <div className="w-full">
                 <input
