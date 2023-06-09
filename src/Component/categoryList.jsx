@@ -60,7 +60,7 @@ const CategoryList = React.memo(({ filterItems, searchFood }) => {
         <span className="loading loading-dots loading-lg text-indigo-500"></span>
       ) : (
         <>
-          <div className="flex gap-5 items-center">
+          <div className="flex gap-5 items-center ">
             <span
               className="cursor-pointer"
               onClick={() => handleFilterItems()}

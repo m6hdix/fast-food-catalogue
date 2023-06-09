@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCart = ({ fastFood }) => {
   return (
-    <div className="card card-side bg-base-100 shadow-xl h-60 ">
+    <div className="card card-side bg-base-100 shadow-xl h-60  ">
       <img className="aspect-square w-40 object-cover" src={fastFood?.imageUrl} alt="" />
       <div className="card-body">
         <h2 className="card-title">{fastFood?.name}</h2>
